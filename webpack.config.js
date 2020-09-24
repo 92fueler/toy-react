@@ -1,6 +1,10 @@
 module.exports = {
+  mode: "development",
   entry: {
     main: './main.js'
+  },
+  optimization: {
+    minimize: false
   },
   module: {
     rules: [
@@ -10,14 +14,10 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env'],
-            plugins: [['@babelplugin-transform-react-jsx', {pragram: 'createElement'}]]
+            plugins: [['@babel/plugin-transform-react-jsx', {pragma: 'createElement'}]]
           }
         }
       }
     ]
-  },
-  mode: "development",
-  optimization: {
-    minimize: false
   }
 }

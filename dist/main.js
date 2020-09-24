@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("for (var _i = 0, _arr = [1, 2, 3]; _i < _arr.length; _i++) {\n  var i = _arr[_i];\n  console.log(i);\n}\n\nvar a = /*#__PURE__*/React.createElement(\"div\", null, \"Hello World\");\n\n//# sourceURL=webpack:///./main.js?");
+eval("for (var _i = 0, _arr = [1, 2, 3]; _i < _arr.length; _i++) {\n  var i = _arr[_i];\n  console.log(i);\n}\n\nfunction createElement(tagName, attributes) {\n  var e = document.createElement(tagName);\n\n  for (var p in attributes) {\n    e.setAttribute(p, attributes[p]);\n  }\n\n  for (var _len = arguments.length, children = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {\n    children[_key - 2] = arguments[_key];\n  }\n\n  for (var _i2 = 0, _children = children; _i2 < _children.length; _i2++) {\n    var child = _children[_i2];\n\n    if (typeof child === 'string') {\n      child = document.createTextNode(child);\n    }\n\n    e.appendChild(child);\n  }\n\n  return e;\n}\n\ndocument.body.appendChild(createElement(\"div\", {\n  id: \"a\",\n  \"class\": \"c\"\n}, createElement(\"div\", null, \"hello 1\"), createElement(\"div\", null, \"hello 2\"), createElement(\"div\", null, \"hello 3\")));\n\n//# sourceURL=webpack:///./main.js?");
 
 /***/ })
 
